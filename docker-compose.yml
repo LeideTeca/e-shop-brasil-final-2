@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: eshop_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  app:
+    build: .
+    container_name: eshop_app
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    depends_on:
+      - mongodb
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017
+    command: streamlit run app.py --server.address=0.0.0.0 --server.port=8501
+
+volumes:
+  mongo_data:

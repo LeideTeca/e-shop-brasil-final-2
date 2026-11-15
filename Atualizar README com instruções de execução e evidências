@@ -126,3 +126,25 @@ A análise dos dados permite identificar os produtos mais procurados e as prefer
 Com essas informações, a E-Shop Brasil pode recomendar produtos de acordo com o interesse de cada consumidor, melhorar a experiência de compra e oferecer promoções mais adequadas.
 
 O uso de dados também pode ajudar a empresa a prever a demanda, controlar o estoque, organizar entregas e reduzir atrasos.
+
+## 16. Como executar o projeto
+
+1. Instalar o Python no computador.
+2. Abrir a pasta do projeto no Visual Studio Code.
+3. Ativar o ambiente virtual.
+4. Configurar a variável MONGODB_URI no arquivo .env.
+5. Instalar as dependências com o comando:
+
+pip install -r requirements.txt
+
+6. Executar a aplicação com o comando:
+
+python -m streamlit run app.py
+
+7. Abrir no navegador o endereço:
+
+http://localhost:8501
+
+## 17. Evidências do funcionamento
+
+As capturas de tela da aplicação estão disponíveis na pasta exemplos, demonstrando o cadastro de clientes, cadastro de pedidos, consultas, edição de registros e visualização do faturamento.

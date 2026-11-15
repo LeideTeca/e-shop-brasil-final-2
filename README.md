@@ -148,3 +148,22 @@ http://localhost:8501
 ## 17. Evidências do funcionamento
 
 As capturas de tela da aplicação estão disponíveis na pasta exemplos, demonstrando o cadastro de clientes, cadastro de pedidos, consultas, edição de registros e visualização do faturamento.
+## 18. Configuração Docker
+
+O projeto contém os arquivos Dockerfile e docker-compose.yml,
+preparados para possibilitar a execução da aplicação em contêineres.
+
+Para iniciar o ambiente em uma instalação com Docker configurado,
+o comando previsto é:
+
+docker compose up --build
+
+Observação: a configuração Docker foi preparada, mas não foi
+executada nem validada durante o desenvolvimento deste projeto.
+A aplicação foi testada localmente no Windows 11, utilizando
+Python, Streamlit e MongoDB Atlas.
+
+## 19. Evidências do projeto
+
+As capturas de tela das principais funcionalidades estão disponíveis
+na pasta exemplos deste repositório.
